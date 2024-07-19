@@ -14,7 +14,6 @@
 }
 
 .journey-header {
-    font-family: 'Work Sans';
     font-size: 48px;
     font-weight: 600;
     line-height: 53px;
@@ -24,7 +23,6 @@
 }
 
 .journey-small-text {
-    font-family: 'Work Sans';
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
@@ -45,7 +43,6 @@
     margin-top: 70px;
 }
 .our-sponsors{
-    font-family: 'Work Sans';
 font-size: 48px;
 font-weight: 600;
 line-height: 53px;
@@ -66,7 +63,7 @@ color: #DA6F51;
         height: 21px;
     }
     .our-sponsors{
-        font-family: 'Work Sans';
+
         font-size: 24px;
         font-weight: 700;
         line-height: 24px;

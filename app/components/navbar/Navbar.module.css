@@ -15,7 +15,6 @@
     gap: 20px;
 }
 .nav-item-desktop{
-    font-family: 'Work Sans';
 font-size: 24px;
 font-weight: 600;
 line-height: 20px;
@@ -48,11 +47,13 @@ color: #fff;
     }
     .nav-items.open {
         display: flex;
+        gap: 50px;
+
     }
     .navbar {
         display: flex;
         padding: 5px 10px;
-        gap: 0px;
+        gap: 30px;
         border-radius: 50px;
         border: 1px solid rgba(19, 24, 39, 0.05);
         justify-content: space-between;
@@ -64,7 +65,6 @@ color: #fff;
 }
 
 .nav-items {
-    
     transition: transform 0.3s ease;
     transform: translateX(100%);
     position: fixed;
@@ -72,10 +72,12 @@ color: #fff;
     z-index: 99;
     right: 0;
     height: 100%;
-    width: 270px;
-    background-color: white;
+    width: 320px;
+    background-color: black;
+    opacity: 0.9;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 0px 30px;
+
 }
 
 .nav-items.open {
@@ -83,9 +85,10 @@ color: #fff;
 }
 
 .nav-item {
-    padding: 10px 0;
-    font-size: 18px;
-    color: #333;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFCDA8;
     cursor: pointer;
     border-bottom: 1px solid #ddd;
 }

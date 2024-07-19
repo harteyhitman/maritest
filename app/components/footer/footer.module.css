@@ -19,7 +19,7 @@
     border-top-right-radius: 54px;
     /* gap: 100px; */
     width: 90%;
-    margin: 100px  10px ;
+    margin: 100px 10px;
     padding: 50px 50px;
 
 }
@@ -31,7 +31,6 @@
 }
 
 .join-support {
-    font-family: 'Work Sans';
     font-size: 48px;
     max-width: 50%;
     font-weight: 600;
@@ -42,7 +41,6 @@
 }
 
 .contact-us {
-    font-family: 'Work Sans';
     font-size: 48px;
     font-weight: 600;
     line-height: 53px;
@@ -55,6 +53,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     gap: 20px;
 }
 
@@ -77,7 +77,6 @@
     font-size: 16px;
     font-weight: 600;
     outline: none;
-    font-family: 'Work sans';
 
 }
 
@@ -93,7 +92,6 @@
     font-size: 16px;
     font-weight: 600;
     outline: none;
-    font-family: 'Work sans';
 
 }
 
@@ -110,28 +108,33 @@
     font-size: 16px;
     font-weight: 600;
 }
+
 .footer-logo {
     display: flex;
     flex-direction: column;
     gap: 22px;
     padding-left: 70px;
 }
+
 .social-media {
     display: flex;
     align-items: center;
     gap: 12px;
 }
+
 .urgency-main {
     display: flex;
     justify-content: center;
     margin: 0 auto;
     align-items: center;
 }
+
 .line {
     margin: 0 50px;
     height: 1px;
     background: #736E69;
 }
+
 .copyright {
     display: flex;
     justify-content: space-between;
@@ -145,11 +148,23 @@
     text-align: left;
     color: rgba(140, 146, 158, 1);
 }
+
+.send-message {
+    width: 80%;
+    /* height: 48px; */
+    padding: 16px 20px;
+    gap: 8px;
+    border-radius: 32px;
+    opacity: 0px;
+    background-color: #fff;
+    color: #736E69;
+}
+
 @media (max-width: 700px) {
     .contact-footer {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start; 
+        align-items: flex-start;
         background-color: rgba(255, 255, 255, 0.2);
         border-top-left-radius: 34px;
         border-top-right-radius: 34px;
@@ -157,15 +172,17 @@
         margin: 50px 0px;
         padding: 10px 10px;
     }
+
     .join-support {
-        font-family: 'Work Sans';
+
         font-size: 24px;
-        max-width: 100%;
+        max-width: 50%;
         font-weight: 600;
         line-height: 32px;
         letter-spacing: -0.04em;
         text-align: left;
     }
+
     .contact-us {
         font-size: 24px;
         font-weight: 600;
@@ -173,6 +190,7 @@
         letter-spacing: -0.04em;
         text-align: left;
     }
+
     .Name {
         width: 64px;
         height: 24px;
@@ -187,6 +205,7 @@
         letter-spacing: -0.1733333319425583px;
         text-align: left;
     }
+
     .Email {
         width: 64px;
         height: 24px;
@@ -203,6 +222,7 @@
 
 
     }
+
     .text-area {
         width: 140px;
         height: 46px;
@@ -217,26 +237,53 @@
         letter-spacing: -0.1733333319425583px;
         text-align: left;
     }
+
     .footer-cont {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    
-.form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
-}
-.support-partners {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: flex-start;
-    text-align: left;
 
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .support-partners {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .send-message {
+        width: 80%;
+        /* height: 48px; */
+        padding: 14px 20px;
+        gap: 8px;
+        border-radius: 32px;
+        opacity: 0px;
+        background-color: #fff;
+        color: #736E69;
+
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 8.86px;
+        letter-spacing: -0.02em;
+        text-align: left;
+
+    }
+    .footer-logo{
+        display: flex;
+        flex-direction: row;
+    }
+.copyright{
+    flex-direction: column;
 }
 }

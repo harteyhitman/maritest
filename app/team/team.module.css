@@ -23,7 +23,6 @@
     padding: 70px 0;
 }
 .team-maritest{
-    font-family: 'Work Sans';
 font-size: 18px;
 font-weight: 700;
 line-height: 28px;
@@ -32,7 +31,6 @@ text-align: center;
 color: #17154C;
 }
 .big-text{
-    font-family: 'Work Sans';
 font-size: 48px;
 font-weight: 600;
 line-height: 53px;
@@ -63,7 +61,6 @@ color: #F46036;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Work Sans';
 font-size: 16px;
 font-weight: 600;
 line-height: 24px;
@@ -97,7 +94,6 @@ text-align: center;
     letter-spacing: 2px;
   }
   .big-text{
-    font-family: 'Work Sans';
 font-size: 30px;
 font-weight: 600;
 line-height: 33px;
@@ -110,7 +106,6 @@ color: #F46036;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Work Sans';
 font-size: 16px;
 font-weight: 600;
 line-height: 24px;
