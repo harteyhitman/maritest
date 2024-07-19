@@ -17,10 +17,10 @@
     background-color: rgba(255, 255, 255, 0.2);
     border-top-left-radius: 54px;
     border-top-right-radius: 54px;
-    gap: 30px;
-    width: 1120px;
-    margin: 100px 0 20px 0;
-    padding: 50px 100px;
+    /* gap: 100px; */
+    width: 90%;
+    margin: 100px  10px ;
+    padding: 50px 50px;
 
 }
 
@@ -152,7 +152,6 @@
         background-color: rgba(255, 255, 255, 0.2);
         border-top-left-radius: 34px;
         border-top-right-radius: 34px;
-        /* gap: 50px; */
         width: 90%;
         margin: 50px 0px;
         padding: 10px 10px;
@@ -164,8 +163,6 @@
         line-height: 32px;
         letter-spacing: -0.04em;
         text-align: left;
-        
-
     }
     .contact-us {
         font-size: 24px;
@@ -173,7 +170,6 @@
         line-height: 14.35px;
         letter-spacing: -0.04em;
         text-align: left;
-
     }
     .Name {
         width: 64px;

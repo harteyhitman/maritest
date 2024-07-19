@@ -1,7 +1,7 @@
 .urgency-cont {
     display: flex;
     align-items: center;
-    margin: 100px 30px;
+    margin: 100px 0px;
     justify-content: space-between;
 }
 .two-moon{
@@ -13,6 +13,7 @@
     max-width: 50%;
     text-align: justify;
     gap: 32px;
+    padding: 0 30px;
 }
 
 .small-text {

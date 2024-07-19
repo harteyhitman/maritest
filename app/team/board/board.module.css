@@ -51,3 +51,20 @@
     line-height: 24px;
     text-align: center;
 }
+@media (max-width: 700px) {
+    .boards-view{
+        flex-direction: column;
+    }
+    .new-text-big {
+        font-size: 30px;
+    }
+    .boards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        margin: 50px 0;
+        
+    }
+}

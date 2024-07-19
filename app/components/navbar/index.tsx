@@ -52,7 +52,6 @@ const Navbar: React.FC = () => {
 
     return (
         <nav className={styles['navbar']}>
-            <div className={styles['nav-desktop']}>
             <Link href="/">
                 <Image
                     src={Frame}
@@ -63,7 +62,6 @@ const Navbar: React.FC = () => {
                 />
             </Link>
          
-            </div>
             {isMobile ? (
                 <>
                     <button className={styles['mobile-menu-icon']} onClick={toggleMenu}>

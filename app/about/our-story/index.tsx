@@ -2,6 +2,7 @@ import ourstory from './ourstory.module.css'
 import Traveller from '../../../public/assets/traveller.png'
 import Image from 'next/image'
 import Twomoon from '../../../public/assets/two-moon.png'
+import urgency from '../../pages/maritest/urgency/urgency.module.css'
 const OurStory = () => {
   return (
     <div className={ourstory['mission']}>
@@ -28,9 +29,18 @@ const OurStory = () => {
             <p>During his recovery, Kakooza reflected on the harsh reality faced by those without access to adequate healthcare. Malaria is a massive burden in Africa, infecting 241 million people and killing over half a million in 2020 alone. Every 75 seconds, a child under five died from the disease. The major issues were limited access to early diagnosis and treatment, poor vector control, lack of medical facilities, and a shortage of healthcare workers.</p><p>Determined to make a difference, Kakooza, leveraging his machine learning expertise from Fundi Bots Uganda and entrepreneurial skills from the African Leadership University, teamed up with four other amazing individuals with diverse skills but on a shared mission to fight malaria in sub-Saharan Africa. MariTest was created. </p><p>
             MariTest is a reusable, non-invasive, automated diagnostic and prescription device that was designed to bridge the gap in malaria diagnosis and treatment, embodying the team's commitment to a malaria-free future.</p>
            </div>
-      <div className={ourstory["twomoon"]}>
-      <Image src={Twomoon} alt=''/>
-      </div>
+           <div className={urgency['two-moon-cont']}>
+                    <Image
+                        src={Twomoon}
+                        alt='moon'
+                        className={urgency['two-moons']}
+                    />
+                    <Image
+                        src={Twomoon}
+                        alt='moon'
+                        className={urgency['two-moon']}
+                    />
+                </div>
       </div>
    
     </div>

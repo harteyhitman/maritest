@@ -8,7 +8,7 @@ import Mailing from '../../../public/assets/mailing.png'
 import Twitter from '../../../public/assets/twitter.png'
 import Instagram from '../../../public/assets/instagram.png'
 
-const Footer = ({ className, contactFooter, supportParners, joinSupport }: any) => {
+const Footer = ({ className, contactFooter, supportParners, joinSupport, contactUs }: any) => {
 
     const contactClick = () => {
         console.log('first')
@@ -20,7 +20,7 @@ const Footer = ({ className, contactFooter, supportParners, joinSupport }: any) 
                 <div className={`${footer["contact-footer"]} ${contactFooter}`}>
                     <div className={`${footer["support-partners"]} ${supportParners}`}>
                         <h3 className={`${footer['join-support']} ${joinSupport}`}>Support <br />Partner <br />Join</h3>
-                        <h3 className={footer['contact-us']}>Contact Us</h3>
+                        <h3 className={`${footer['contact-us']} ${contactUs}`}>Contact Us</h3>
                     </div>
                     <form className={footer["form"]}>
                         <div className="info">
