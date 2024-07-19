@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
             }
         };
 
-        handleResize(); // Check initial screen size
+        handleResize();
         window.addEventListener('resize', handleResize);
         document.addEventListener('mousedown', handleClickOutside);
 
@@ -52,6 +52,7 @@ const Navbar: React.FC = () => {
 
     return (
         <nav className={styles['navbar']}>
+            <div className={styles['nav-desktop']}>
             <Link href="/">
                 <Image
                     src={Frame}
@@ -61,6 +62,8 @@ const Navbar: React.FC = () => {
                     className={styles['navbar-brand']}
                 />
             </Link>
+         
+            </div>
             {isMobile ? (
                 <>
                     <button className={styles['mobile-menu-icon']} onClick={toggleMenu}>
@@ -78,10 +81,10 @@ const Navbar: React.FC = () => {
                     </div>
                 </>
             ) : (
-                <div className={styles['nav-items']}>
+                <div className={styles['nav-items-desktop']}>
                     {navItems.map((item) => (
                         <Link key={item.href} href={item.href} className='hover:text-[#FFCDA8]'>
-                            <div className={styles['nav-item']}>{item.label}</div>
+                            <div className={styles['nav-item-desktop']}>{item.label}</div>
                         </Link>
                     ))}
                 </div>
@@ -91,3 +94,5 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
+
+
