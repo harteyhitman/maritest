@@ -1,54 +1,122 @@
-'use client'
-import footer from './footer.module.css'
-import Button from '../button/index'
-import Image from 'next/image'
-import FooterLogo from '../../../public/assets/Frame.png'
-import Linkedin from '../../../public/assets/linkedin.png'
-import Mailing from '../../../public/assets/mailing.png'
-import Twitter from '../../../public/assets/twitter.png'
-import Instagram from '../../../public/assets/instagram.png'
+'use client';
 
-const Footer = ({ className, contactFooter, supportParners, joinSupport, contactUs }: any) => {
+import footerStyles from './footer.module.css';
+import Button from '../button';
+import Image from 'next/image';
+import FooterLogo from '../../../public/assets/Frame.png';
+import LinkedinIcon from '../../../public/assets/linkedin.png';
+import MailingIcon from '../../../public/assets/mailing.png';
+import TwitterIcon from '../../../public/assets/twitter.png';
+import InstagramIcon from '../../../public/assets/instagram.png';
 
-    const contactClick = () => {
-        console.log('first')
-    }
+interface FooterProps {
+    className?: string;
+    contactFooter?: string;
+    supportPartners?: string;
+    joinSupport?: string;
+    contactUs?: string;
+    formatted?: string;
+    inputContact?: string;
+    inputContactArea?: string;
+    messageBtn?: string;
+    ContactsLogo?: string;
+    ContactsLine?: string;
+    contactCopyright?: string;
+}
+
+const Footer: React.FC<FooterProps> = ({
+    className,
+    contactFooter,
+    supportPartners,
+    joinSupport,
+    contactUs,
+    formatted,
+    inputContact,
+    inputContactArea,
+    messageBtn,
+    ContactsLogo,
+    ContactsLine,
+    contactCopyright,
+}) => {
+
+    const handleContactClick = () => {
+        console.log('Contact button clicked');
+    };
 
     return (
-        <div className={`${footer['footer-main']} ${className}`}>
-            <div className={footer['footer-cont']}>
-                <div className={`${footer["contact-footer"]} ${contactFooter}`}>
-                    <div className={`${footer["support-partners"]} ${supportParners}`}>
-                        <h3 className={`${footer['join-support']} ${joinSupport}`}>Support <br />Partner <br />Join</h3>
-                        <h3 className={`${footer['contact-us']} ${contactUs}`}>Contact Us</h3>
+        <div className={`
+        ${footerStyles['footer-main']} 
+        ${className}`}>
+            <div className={footerStyles['footer-cont']}>
+                <div className={`
+                    ${footerStyles["contact-footer"]
+                    } ${contactFooter}`}>
+                    <div className={`
+                    ${footerStyles["support-partners"]} 
+                    ${supportPartners}`}>
+                        <h3 className={`
+                    ${footerStyles['join-support']}
+                     ${joinSupport}`}>
+                            Support  Partner  Join
+                        </h3>
+                        <h3 className={`
+                    ${footerStyles['contact-us']} 
+                    ${contactUs}`}>
+                            Contact Us
+                        </h3>
                     </div>
-                    <form className={footer["form"]}>
+                    <form className={`
+                    ${footerStyles["form"]} 
+                    ${formatted}`}>
                         <div className="info">
-                            <input type="text" placeholder='Name' className={footer['Name']} />
-                            <input type="email" placeholder='Email' className={footer['Email']} />
+                            <input
+                                type="text"
+                                placeholder='Name'
+                                className={`
+                        ${footerStyles['Name']} 
+                        ${inputContact}`}
+                            />
+                            <input
+                                type="email"
+                                placeholder='Email'
+                                className={`
+                        ${footerStyles['Email']} 
+                        ${inputContact}`}
+                            />
                         </div>
-                        <input name="message" id="message" placeholder='Leave a message...' className={footer['text-area']}></input>
-                        <Button label='Send message' onClick={contactClick} className=' bg-white text-[#000] text-[16px] font-bold hover:bg-[#FFCDA8] rounded-[50px]' />
+                        <input
+                            type='text'
+                            name="message"
+                            id="message"
+                            placeholder='Leave a message...'
+                            className={`
+                        ${footerStyles['text-area']
+                                } ${inputContactArea}`}
+                        />
+                        <Button
+                            label='Send message'
+                            onClick={handleContactClick}
+                            className={`${footerStyles['send-message']} ${messageBtn}`}
+                        />
                     </form>
                 </div>
             </div>
-            <div className={footer["footer-logo"]}>
-                <Image src={FooterLogo} width={154} height={21} alt='logo' />
-                <div className={footer["social-media"]}>
-                    <Image src={Linkedin} width={20} height={20} alt='media' />
-                    <Image src={Instagram} width={20} height={20} alt='media' />
-                    <Image src={Mailing} width={20} height={20} alt='media' />
-                    <Image src={Twitter} width={20} height={20} alt='media' />
+            <div className={`${footerStyles["footer-logo"]} ${ContactsLogo}`}>
+                <Image src={FooterLogo} width={154} height={21} alt='Footer Logo' />
+                <div className={footerStyles["social-media"]}>
+                    <Image src={LinkedinIcon} width={20} height={20} alt='LinkedIn' />
+                    <Image src={InstagramIcon} width={20} height={20} alt='Instagram' />
+                    <Image src={MailingIcon} width={20} height={20} alt='Mailing' />
+                    <Image src={TwitterIcon} width={20} height={20} alt='Twitter' />
                 </div>
-
-                <div className={footer["line"]}></div>
+                <div className={`${footerStyles["line"]} ${ContactsLine}`}></div>
             </div>
-            <div className={footer["copyright"]}>
+            <div className={`${footerStyles["copyright"]} ${contactCopyright}`}>
                 <p>© 2024 MariTest Africa. All rights reserved.</p>
                 <p>Privacy Policy <span>Terms & Conditions</span></p>
             </div>
         </div>
-    )
+    );
 }
 
-export default Footer
+export default Footer;
